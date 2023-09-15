@@ -1,0 +1,92 @@
+/* RESET RULES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    display: inline-block;
+}
+
+/* COLOR PALETTE */
+:root {
+    --blue: #0084FD;
+    --light-blue: #B5DDFF;
+    --violet: #9792E4;
+    --white: #FFF;
+    --dark-grey: #333;
+    --gold: #FDC15F;
+    --black: #000;
+}
+
+/* UTILITY CLASSES */
+
+    /* containers */
+.container-lg {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container-md {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.container-sm {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+    /* row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    /* columns */
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+
+.col-6 {
+    flex-basis: calc((100% / 12) * 6);
+}
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.col-12 {
+    flex-basis: 100%;
+}
+
+    /* content flex positioning */
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
