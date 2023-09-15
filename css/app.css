@@ -90,3 +90,64 @@ a {
 .items-center {
     align-items: center;
 }
+
+/* COMPONENTS */
+.btn.btn-navbar {
+    line-height: 38px;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 0 17px;
+    border-radius: 18px;
+}
+
+/* PAGE HEADER STYLING SECTION */
+.page-header {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px 30px;
+    font-size: 15px;
+}
+
+.navbar__hamburger-menu {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar__links {
+    display: none;
+    gap: 30px;
+    line-height: 40px;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 810px) {
+    .col > .navbar__hamburger-menu {
+        display: none;
+    }
+
+    .navbar__links {
+        display: flex;
+    }
+}
+
+
+/*debug*/
+.debug .container-lg {
+    border-right: 2px dashed violet;
+    border-left: 2px dashed violet;
+}
+
+.debug .row {
+    border: 2px solid red;
+}
+
+.debug [class^="col"] {
+    border: 3px solid black;
+}
