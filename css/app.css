@@ -301,7 +301,7 @@ section .col {
     font-size: 15px;
 }
 
-.testimonials__showcase .row{
+.testimonials__showcase .row, .section.benefits .row + .row{
     row-gap: 33px;
 }
 
@@ -422,6 +422,23 @@ section .col {
     .testimonials__introduction h2 {
         font-size: 40px;
     }
+
+    /* card benefits */
+    .section.benefits .col.col-4 {
+        flex-basis: calc((100% / 12) * 6);
+    }
+
+    .section.benefits .benefits__title {
+        font-size: 40px;
+    }
+
+    .card.card-benefits > .card-icon {
+        font-size: 60px;
+    }
+
+    .card.card-benefits .card-title {
+        font-size: 25px;
+    }
 }
 
 @media screen and (min-width: 920px) {
@@ -463,6 +480,11 @@ section .col {
     .card-img {
         align-items: center;
     }
+
+    /* card benefits */
+    .section.benefits .col.col-4 {
+        flex-basis: calc((100% / 12) * 4);
+    }
 }
 
 /*debug*/
@@ -476,7 +498,5 @@ section .col {
 }
 
 .debug [class^="col"] {
-    border: 3px solid black;
-    /* min-height: 100px; */
-    /* padding: 20px; */
+    border: 3px solid black; 
 }
