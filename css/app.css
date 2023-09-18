@@ -106,8 +106,7 @@ section .col {
 }
 
 .items-end {
-    display: flex;
-    align-items: flex-end;
+    align-self: flex-end;
 }
 
     /* text positioning */
