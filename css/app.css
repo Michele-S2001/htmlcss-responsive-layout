@@ -382,6 +382,10 @@ section .col {
     gap: 30px;
 }
 
+.section.about-us .row .col {
+    padding: 0;
+}
+
 .about-us__description h2 {
     font-size: 40px;
 }
