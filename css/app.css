@@ -453,9 +453,30 @@ section .col {
     font-size: 14px;
 }
 
-.get-started__subscription .copyright .policy {
+.policy {
     text-decoration: underline;
 }
+
+/* FOOTER STYLING SECTION */
+.page-footer {
+    padding: 42px 32px;
+    background-color: var(--dark-grey);
+    font-size: 14px;
+}
+
+.page-footer .col {
+    max-width: 410px;
+}
+
+.page-footer p {
+    line-height: 20px;
+}
+
+.page-footer p:first-child {
+    margin-bottom: 65px;
+}
+
+
 
 
 /* MEDIA QUERIES */
