@@ -166,6 +166,15 @@ section .col {
     border-radius: 30px;
 }
 
+.btn.btn-linkedin {
+    font-size: 13px;
+    line-height: 35px;
+    padding: 0 15px;
+    background-color: var(--violet);
+    align-self: flex-start;
+    border-radius: 25px;
+}
+
 .upper-word {
     text-transform: uppercase;
     display: block;
@@ -353,6 +362,51 @@ section .col {
     margin-bottom: 30px;
 }
 
+/*  SECTION ABOUT-US STYLING SECTION  */
+.section.about-us {
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.section.about-us .about-us__overview{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-us__description h2 {
+    font-size: 40px;
+}
+
+.about-us__description p:nth-child(2) {
+    margin-bottom: 65px;
+}
+
+.about-us__description p:nth-child(3) {
+    margin-bottom: 50px;
+}
+
+.about-us__profile {
+    position: relative;
+}
+
+.about-quote {
+    position: absolute;
+    left: 45%;
+    top: 8%;
+    font-size: 55px;
+}
+
+.about-us__img {
+    border-radius: 50%;
+    width: 60%;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.about-us__caption {
+    margin-bottom: 0;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px) {
@@ -382,6 +436,27 @@ section .col {
 
     .testimonial figure .testimonial-img {
         max-width: 100%;
+    }
+
+    /* about us section */
+    .section.about-us .col.col-8{
+        flex-basis: calc((100% / 12) * 8);
+    }
+
+    .section.about-us .col.col-4 {
+        flex-basis: calc((100% / 12) * 4);
+    }
+
+    .about-us__profile .about-us__img {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .about-quote {
+        position: absolute;
+        left: 80%;
+        top: 5%;
+        font-size: 55px;
     }
 }
 
@@ -438,6 +513,11 @@ section .col {
 
     .card.card-benefits .card-title {
         font-size: 25px;
+    }
+
+    /* about-us section */
+    .section.about-us .about-us__overview {
+        padding-left: 70px;
     }
 }
 
