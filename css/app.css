@@ -147,6 +147,12 @@ section .col {
     border-radius: 18px;
     color: var(--black);
     padding: 0 17px;
+    transition: all 0.2s linear;
+}
+
+.btn.btn-navbar:hover {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .btn.btn-blue, .btn.btn-purple {
@@ -163,6 +169,11 @@ section .col {
     line-height: 40px;
     background-color: var(--violet);
     font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.btn.btn-purple:hover {
+    background-color: #746fb6;
 }
 
 .btn.btn-linkedin {
@@ -180,6 +191,7 @@ section .col {
     background-color: var(--white);
     border-radius: 70px;
     font-weight: bold;
+    transition: 0.3s cubic-bezier(.52,.24,.93,.6);
 }
 
 .upper-word {
@@ -400,10 +412,6 @@ section .col {
     gap: 30px;
 }
 
-.section.about-us .row .col {
-    padding: 0;
-}
-
 .about-us__description h2 {
     font-size: 40px;
 }
@@ -442,6 +450,10 @@ section .col {
 .section.get-started {
     padding: 65px 0;
     background-color: var(--violet);
+}
+
+.btn.btn-xxl:hover {
+    transform: scale(1.2);
 }
 
 .get-started__slogan .upper-word {
@@ -532,6 +544,10 @@ section .col {
     /* about us section */
     .section.about-us .row {
         flex-wrap: nowrap;
+    }
+
+    .section.about-us .row .col {
+        padding: 0;
     }
 
     .section.about-us .col.col-8{
