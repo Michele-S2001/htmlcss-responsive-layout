@@ -317,7 +317,7 @@ section .col {
     font-size: 15px;
 }
 
-.testimonials__showcase .row, .section.benefits .row + .row{
+.testimonials__showcase .row {
     row-gap: 33px;
 }
 
@@ -349,6 +349,10 @@ section .col {
     background-color: var(--violet);
     padding-top: 75px;
     padding-bottom: 65px;
+}
+
+.section.benefits .row + .row {
+    row-gap: 24px;
 }
 
 .benefits__title {
@@ -503,7 +507,7 @@ section .col {
     }
 
     .testimonial figure {
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .testimonial figure .testimonial-img {
@@ -529,7 +533,7 @@ section .col {
     }
 
     .section.about-us .about-us__overview {
-        padding-left: 70px;
+        margin-left: 70px;
     }
 
     .about-quote {
