@@ -145,34 +145,34 @@ section .col {
 .btn.btn-navbar {
     line-height: 38px;
     background-color: var(--white);
+    border-radius: 18px;
     color: var(--black);
     padding: 0 17px;
-    border-radius: 18px;
+}
+
+.btn.btn-blue, .btn.btn-purple {
+    padding: 0 50px;
+    border-radius: 30px;
 }
 
 .btn.btn-blue {
-    line-height: 42px;
+    line-height: 44px;
     background-color: var(--blue);
-    color: var(--white);
-    border-radius: 30px;
-    padding: 0 50px;
 }
 
 .btn.btn-purple {
+    line-height: 40px;
     background-color: var(--violet);
     font-weight: bold;
-    line-height: 40px;
-    padding: 0 50px;
-    border-radius: 30px;
 }
 
 .btn.btn-linkedin {
-    font-size: 13px;
     line-height: 35px;
-    padding: 0 15px;
     background-color: var(--violet);
-    align-self: flex-start;
     border-radius: 25px;
+    padding: 0 15px;
+    font-size: 13px;
+    align-self: flex-start;
 }
 
 .upper-word {
