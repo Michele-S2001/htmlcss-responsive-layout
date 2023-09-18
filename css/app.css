@@ -175,6 +175,14 @@ section .col {
     align-self: flex-start;
 }
 
+.btn.btn-xxl {
+    line-height: 65px;
+    padding: 0 80px;
+    background-color: var(--white);
+    border-radius: 70px;
+    font-weight: bold;
+}
+
 .upper-word {
     text-transform: uppercase;
     display: block;
@@ -408,6 +416,45 @@ section .col {
     margin-bottom: 0;
 }
 
+/*SECTION GET STARTED STYLING SECTION*/
+.section.get-started {
+    padding: 65px 0;
+    background-color: var(--violet);
+}
+
+.get-started__slogan .upper-word {
+    margin-bottom: 30px;
+    opacity: 0.6;
+}
+
+.get-started__slogan h3 {
+    font-size: 25px;
+}
+
+.get-started__slogan .free {
+    font-size: 55px;
+    color: var(--gold);
+    margin-bottom: 50px;
+    display: block;
+}
+
+.get-started__subscription {
+    padding: 0 20px;
+}
+
+.get-started__subscription > * {
+    margin-bottom: 35px;
+}
+
+.get-started__subscription .copyright {
+    font-size: 14px;
+}
+
+.get-started__subscription .copyright .policy {
+    text-decoration: underline;
+}
+
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px) {
 
@@ -518,6 +565,28 @@ section .col {
     /* about-us section */
     .section.about-us .about-us__overview {
         padding-left: 70px;
+    }
+
+    /* get started section */
+    .get-started__subscription .subscription-text {
+        padding: 0 100px;
+    }
+
+    .get-started__subscription .copyright {
+        font-size: initial;
+    }
+
+    .get-started__slogan h3 {
+        font-size: 40px;
+    }
+
+    .get-started__slogan .free {
+        font-size: 70px;
+    }
+
+    .btn.btn-xxl {
+        line-height: 80px;
+        font-size: 18px;
     }
 }
 
