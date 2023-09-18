@@ -330,7 +330,7 @@ section .col {
     padding-bottom: 110px;
 }
 
-.section.testimonials .col.col-12:first-child {
+.testimonials__showcase .row > .col.col-12 {
     padding: 0;
 }
 
