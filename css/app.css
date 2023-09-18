@@ -206,8 +206,23 @@ section .col {
     line-height: 40px;
 }
 
-.navbar-link:hover {
-    text-decoration: underline;
+.navbar__links li {
+    position: relative;
+}
+
+.navbar__links li:hover > ::after {
+    width: 100%;
+}
+
+.navbar-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.25s ease-in;
 }
 
 /* SECTION HERO STYLING SECTION */
