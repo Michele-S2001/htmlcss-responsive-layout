@@ -404,15 +404,15 @@ section .col {
 
 .about-quote {
     position: absolute;
-    left: 45%;
-    top: 8%;
+    left: 150px; 
+    top: 15px;
     font-size: 55px;
 }
 
 .about-us__img {
     border-radius: 50%;
-    width: 60%;
-    max-width: 300px;
+    width: 181px;
+    height: 181px;
     object-fit: cover;
 }
 
@@ -491,6 +491,10 @@ section .col {
     }
 
     /* about us section */
+    .section.about-us .row {
+        flex-wrap: nowrap;
+    }
+
     .section.about-us .col.col-8{
         flex-basis: calc((100% / 12) * 8);
     }
@@ -500,15 +504,17 @@ section .col {
     }
 
     .about-us__profile .about-us__img {
-        width: 100%;
-        max-width: 260px;
+        width: 236px;
+        height: 236px;
+    }
+
+    .section.about-us .about-us__overview {
+        padding-left: 70px;
     }
 
     .about-quote {
-        position: absolute;
-        left: 80%;
-        top: 5%;
         font-size: 55px;
+        left: 190px;
     }
 }
 
@@ -567,11 +573,6 @@ section .col {
         font-size: 25px;
     }
 
-    /* about-us section */
-    .section.about-us .about-us__overview {
-        padding-left: 70px;
-    }
-
     /* get started section */
     .get-started__subscription .subscription-text {
         padding: 0 100px;
@@ -619,6 +620,17 @@ section .col {
     .testimonial__description {
         padding-left: 60px;
     }
+
+    /* about section */
+    .about-us__profile .about-us__img {
+        width: 245px;
+        height: 245px;
+    }
+
+    .about-quote {
+        left: 200px;
+        font-size: 65px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -636,6 +648,10 @@ section .col {
         flex-basis: calc((100% / 12) * 4);
     }
 }
+
+
+
+
 
 /*debug*/
 .debug .container-lg {
